@@ -36,7 +36,6 @@ export const StateContextProvider = ({ children }) => {
             setLocation(thisData.address)
             setValues(thisData.values)
             setWeather(thisData.values[0])
-            console.log(thisData.values[0])
 
 
 
@@ -51,9 +50,7 @@ export const StateContextProvider = ({ children }) => {
         fetchWeather()
     }, [place])
 
-    useEffect(() => {
-        console.log(values)
-    }, [values])
+
 
     return (
         <StateContext.Provider value={{ weather, setPlace, values, thisLocation }}>

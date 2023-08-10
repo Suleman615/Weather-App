@@ -14,7 +14,6 @@ export default function MiniCard({ time, temp, iconString }) {
     const [icon, setIcon] = useState()
 
     useEffect(() => {
-        console.log(iconString)
         if (iconString.toLowerCase().includes('clear')) { setIcon(sun) }
         else if (iconString.toLowerCase().includes('rain') || iconString.toLowerCase().includes('shower')) { setIcon(rain) }
         else if (iconString.toLowerCase().includes('cloud') || iconString.toLowerCase().includes('overcast')) { setIcon(cloud) }
