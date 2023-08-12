@@ -22,7 +22,7 @@ export default function MiniCard({ time, temp, iconString }) {
         else if (iconString.toLowerCase().includes('thunder') || iconString.toLowerCase().includes('storm')) { setIcon(storm) }
         else if (iconString.toLowerCase().includes('fog')) { setIcon(fog) }
 
-    }, [])
+    }, [iconString])
 
     return (
         <div className='glassCard w-[10rem] h-[10rem] p-4 flex flex-col '>

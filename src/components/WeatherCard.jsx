@@ -20,6 +20,7 @@ export default function WeatherCard({
     heatindex,
     iconString,
 
+
 }) {
 
     const [icon, setIcon] = useState(sun)
@@ -39,7 +40,7 @@ export default function WeatherCard({
     }, [iconString])
     return (
         <div className='w-[22rem] min-w[22rem]  min-h-[32rem]  glassCard p-4'>
-            <div className='flex w-full justify-center items-center gap-4 mt-12 mb-4'>
+            <div className='flex w-full justify-center items-center gap-4  mb-4'>
                 <img src={icon} alt="weather-icon" />
                 <p className='font-bold text-5xl flex justify-center items-center'>{temperature} &deg;C</p>
             </div>
@@ -57,6 +58,14 @@ export default function WeatherCard({
             </div>
             <div className='w-full p-3 mt-4 flex justify-between  items-center'>
                 <p className='font-semibold text-large '>Heat Index</p>
+                <p className=' text-large '>
+                    {heatindex ? heatindex : "N/A"}
+                </p>
+            </div>
+            <hr className='bg-slate-600' />
+
+            <div className='w-full p-3 mt-4 flex justify-between  items-center'>
+                <p className='font-semibold text-large '>Precepetation</p>
                 <p className=' text-large '>
                     {heatindex ? heatindex : "N/A"}
                 </p>
