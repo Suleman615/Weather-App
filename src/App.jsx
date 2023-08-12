@@ -31,7 +31,7 @@ function App() {
       </nav>
       <BackgroundLayout></BackgroundLayout>
       <main className='w-full flex flex-wrap gap-8 py-4 px-2 md:px-[10%] items-center justify-center'>
-        <WeatherCard place={thisLocation} windSpeed={weather.wspd} humidity={weather.humidity} temperature={weather.temp} heatindex={weather.heatindex} iconString={weather.conditions} />
+        <WeatherCard place={thisLocation} windSpeed={weather.wspd} humidity={weather.humidity} temperature={weather.temp} heatindex={weather.heatindex} iconString={weather.conditions} Precipitation={weather.pop} />
         <div className=' flex justify-center gap-8 flex-wrap w-[100%] md:w-[60%]'>
 
           {

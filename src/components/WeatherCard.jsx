@@ -19,6 +19,7 @@ export default function WeatherCard({
     place,
     heatindex,
     iconString,
+    Precipitation
 
 
 }) {
@@ -65,9 +66,9 @@ export default function WeatherCard({
             <hr className='bg-slate-600' />
 
             <div className='w-full p-3 mt-4 flex justify-between  items-center'>
-                <p className='font-semibold text-large '>Precepetation</p>
+                <p className='font-semibold text-large '>Precipitation</p>
                 <p className=' text-large '>
-                    {heatindex ? heatindex : "N/A"}
+                    {Precipitation} %
                 </p>
             </div>
 
